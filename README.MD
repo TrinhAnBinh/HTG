@@ -16,7 +16,7 @@ Contact info: binh.trinh@peakvn.com
 
 2.2.2 [Connect Strings](#2.2.2)
 
-1. [Apply in HTG](#3)
+3. [Apply in HTG](#3)
 
 
 
