@@ -3,12 +3,20 @@ Contact info: binh.trinh@peakvn.com
 
 # Table of contents
 1. [Technical stack](#Technicalstack)
+
+
 2. [Connecting to the Database](#2)
+
+
 2.1. [About Local Connections](#2.1)
+
 2.2. [About Remote Connections](#2.2)
+
 2.2.1 [Oracle Client Software](#2.2.1)
+
 2.2.2 [Connect Strings](#2.2.2)
-3. [Apply in HTG](#3)
+
+1. [Apply in HTG](#3)
 
 
 
