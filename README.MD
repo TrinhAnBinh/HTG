@@ -6,6 +6,9 @@ Contact info: binh.trinh@peakvn.com
 2. [Connecting to the Database](#2)
 2.1. [About Local Connections](#2.1)
 2.2. [About Remote Connections](#2.2)
+2.2.1 [Oracle Client Software](#2.2.1)
+2.2.2 [Connect Strings](#2.2.2)
+3. [Apply in HTG](#3)
 
 
 
@@ -18,14 +21,14 @@ Contact info: binh.trinh@peakvn.com
 - Oracle Data Access Components (optional when using naitive connection)
 
 
-# Connecting to the Database {#2}
+# <a id='2'>Connecting to the Database</a>
 
 Depend on the your host, Oracle Database XE supports connections between SQL Command Line (SQL*Plus) and the database either locally, or remotely over a TCP/IP network. The method that you use to connect to Oracle Database XE with SQL Command Line depends on whether you are initiating a local connection or a remote connection. Local and remote connections are explained in the following sections:
 
 1. Local Connections
 2. Remote Connections
 
-## About Local Connections {#2.1}
+## <a id='2.1'>About Local Connections</a>
 
 Connecting locally means running SQL Command Line (or any other Oracle command-line utility) on the same host computer where Oracle Database XE is installed (the "Oracle Database XE host computer") and then initiating a database connection from SQL Command Line (or other utility). To connect locally, you must supply only a database user name and password. For example, picture below shows a user connecting locally with SQL Command Line and entering a connect command that supplies the user name hr and password hr.
 
@@ -35,13 +38,13 @@ Connecting locally means running SQL Command Line (or any other Oracle command-l
 This connection usually apply for sysadmin
 
 
-## About Remote Connections {#2.2}
+## <a id='2.2'>About Remote Connections</a>
 
 Connecting remotely means running SQL Command Line (or any other Oracle command-line utility) on a computer other than the Oracle Database XE host computer, and then initiating a database connection from SQL Command Line (or other utility) over the network.
 
 ![](img/remote.PNG)
 
-### Oracle Client Software
+### <a id='2.2.1'>Oracle Client Software</a>
 The remote computer must have Oracle client software installed. It is through Oracle client software that Oracle command-line utilities (and your applications) connect to the database. Oracle Database XE accepts connections from all of the following types of Oracle client software:
 
 - Oracle Database Express Edition Client (Oracle Database XE Client)
@@ -52,7 +55,7 @@ When you install Oracle Database XE, Oracle Database XE Client is also installed
 All Oracle client software includes Oracle Net, which is the Oracle network software that enables client applications on one computer to connect to databases on another computer over a network.
 ```
 
-### Connect Strings
+### <a id='2.2.2'>Connect Strings</a>
 
 To connect remotely, you must supply not just a user name and password, but a complete Oracle Net connect string. In addition to the database user name and password, a connect string includes a host name or host IP address, an optional TCP port number, and an optional database service name. These additional parameters are required to help Oracle Net find the right host computer and connect to Oracle Database XE. An Oracle Net connect string has the following format:
 
@@ -68,7 +71,7 @@ where:
 
 This connection usually apply for end user such as: Data Analyst, Data Engineer
 
-# Apply in HTG
+# <a id='3'>Apply in HTG </a>
 ## Direct Connection
 ### Local Connections
 
