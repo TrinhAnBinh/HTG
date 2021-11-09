@@ -9,7 +9,7 @@ Contact info: binh.trinh@peakvn.com
 
 
 
-# Technical stack {#Technicalstack}
+# <a id='Technicalstack'>Technical stack</a>
 - OS: Windown Server 2016 or newer
 - Application: Power BI
 - Programming language: Python3
