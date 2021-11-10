@@ -148,7 +148,7 @@ print(cursor.fetchall())
 # <a id='4'>Create and Grant access</a>
 ```sql
 --CREATE USER;
-CREATE USER AP_HTF IDENTIFIED BY DHjybY7LyG9z49Wy; 
+CREATE USER AP_HTF IDENTIFIED BY AP_HTF_password; 
 --GRANT SESSION TO USER FOR LOGIN
 grant create session to AP_HTF;
 
