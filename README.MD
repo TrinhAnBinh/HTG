@@ -18,7 +18,7 @@ Contact info: binh.trinh@peakvn.com
 
 3. [Apply in HTG](#3)
 
-
+4. [Create and Grant access](#4)
 
 # <a id='Technicalstack'>Technical stack</a>
 - OS: Windown Server 2016 or newer
@@ -145,5 +145,19 @@ print(cursor.fetchall())
 
 ![](img/10.PNG)
 
+# <a id='4'>Create and Grant access</a>
+```sql
+--CREATE USER;
+CREATE USER AP_HTF IDENTIFIED BY DHjybY7LyG9z49Wy; 
+--GRANT SESSION TO USER FOR LOGIN
+grant create session to AP_HTF;
 
+--GRANT ROLE TO USER
+grant create view, create procedure, create sequence, create table to AP_HTF;
 
+--Assign the quota by altering the user, like so:
+
+alter user AP_HTF quota unlimited on users;
+
+COMMIT;
+```
