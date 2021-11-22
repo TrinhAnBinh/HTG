@@ -24,7 +24,7 @@ Contact info: binh.trinh@peakvn.com
 - OS: Windown Server 2016 or newer
 - Application: Power BI
 - Programming language: Python3
-- Software: Oracle Client Instant 18 or newer
+- [Software: Oracle Client Instant 18 or newer](https://www.oracle.com/database/technologies/instant-client/downloads.html)
 - Connection API: ODBC (Open Database Connectivity)
 - Oracle Data Access Components (optional when using naitive connection)
 
@@ -97,7 +97,7 @@ sqlplus
 sqlplus no/log
 ```
 ```sql
-CONNECT TRINGUYENH/password_htg@//103.163.214.72:1521/XEPDB1
+CONNECT TRINGUYENH/password_oracle@//103.163.214.72:1521/XEPDB1
 ```
 ![](img/2.PNG)
 ```sql
@@ -136,7 +136,7 @@ SELECT * FROM T_D_ACCOUNT_TYPE;
 ```py
 import cx_Oracle
 
-db_conn = cx_Oracle.connect('TRINGUYENH/password_htg@//103.163.214.72:1521/XEPDB1', encoding = "UTF-8")
+db_conn = cx_Oracle.connect('TRINGUYENH/password_oracle@//103.163.214.72:1521/XEPDB1', encoding = "UTF-8")
 cursor = db_conn.cursor()
 cursor.execute('SELECT * FROM T_D_ACCOUNT_TYPE')
 
@@ -161,3 +161,5 @@ alter user AP_HTF quota unlimited on users;
 
 COMMIT;
 ```
+
+grant create view to ap_htf;
